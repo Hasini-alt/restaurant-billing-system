@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍴 Hyderabadi Restaurant</h1>
+    <p>Delicious Food | Great Experience</p>
+</header>
+
+<section class="customer">
+    <input type="text" id="name" placeholder="Customer Name">
+    <input type="text" id="phone" placeholder="Phone Number">
+</section>
+
+<h2 class="category">🥘 Starters</h2>
+<section class="menu">
+
+<div class="card">
+    <h3>Paneer Tikka</h3>
+    <p>₹180</p>
+    <div class="qty">
+        <button onclick="changeQty('paneer', -1)">-</button>
+        <span id="paneerQty">0</span>
+        <button onclick="changeQty('paneer', 1)">+</button>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Chicken Lollipop</h3>
+    <p>₹220</p>
+    <div class="qty">
+        <button onclick="changeQty('lollipop', -1)">-</button>
+        <span id="lollipopQty">0</span>
+        <button onclick="changeQty('lollipop', 1)">+</button>
+    </div>
+</div>
+
+</section>
+
+<h2 class="category">🍛 Main Course</h2>
+<section class="menu">
+
+<div class="card">
+    <h3>Butter Chicken</h3>
+    <p>₹250</p>
+    <div class="qty">
+        <button onclick="changeQty('butterChicken', -1)">-</button>
+        <span id="butterChickenQty">0</span>
+        <button onclick="changeQty('butterChicken', 1)">+</button>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Paneer Butter Masala</h3>
+    <p>₹200</p>
+    <div class="qty">
+        <button onclick="changeQty('paneerMasala', -1)">-</button>
+        <span id="paneerMasalaQty">0</span>
+        <button onclick="changeQty('paneerMasala', 1)">+</button>
+    </div>
+</div>
+
+</section>
+
+<h2 class="category">🍚 Rice & Biryani</h2>
+<section class="menu">
+
+<div class="card">
+    <h3>Chicken Biryani</h3>
+    <p>₹220</p>
+    <div class="qty">
+        <button onclick="changeQty('biryani', -1)">-</button>
+        <span id="biryaniQty">0</span>
+        <button onclick="changeQty('biryani', 1)">+</button>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Paneer Biryani</h3>
+    <p>₹240</p>
+    <div class="qty">
+        <button onclick="changeQty('paneerBiryani', -1)">-</button>
+        <span id="paneerBiryaniQty">0</span>
+        <button onclick="changeQty('paneerBiryani', 1)">+</button>
+    </div>
+</div>
+
+</section>
+
+<h2 class="category">🥤 Beverages</h2>
+<section class="menu">
+
+<div class="card">
+    <h3>Cold Coffee</h3>
+    <p>₹100</p>
+    <div class="qty">
+        <button onclick="changeQty('coffee', -1)">-</button>
+        <span id="coffeeQty">0</span>
+        <button onclick="changeQty('coffee', 1)">+</button>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Sweet Lassi</h3>
+    <p>₹60</p>
+    <div class="qty">
+        <button onclick="changeQty('lassi', -1)">-</button>
+        <span id="lassiQty">0</span>
+        <button onclick="changeQty('lassi', 1)">+</button>
+    </div>
+</div>
+
+</section>
+
+<h2 class="category">🍨 Desserts</h2>
+<section class="menu">
+
+<div class="card">
+    <h3>Gulab Jamun</h3>
+    <p>₹80</p>
+    <div class="qty">
+        <button onclick="changeQty('gulab', -1)">-</button>
+        <span id="gulabQty">0</span>
+        <button onclick="changeQty('gulab', 1)">+</button>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Ice Cream</h3>
+    <p>₹90</p>
+    <div class="qty">
+        <button onclick="changeQty('icecream', -1)">-</button>
+        <span id="icecreamQty">0</span>
+        <button onclick="changeQty('icecream', 1)">+</button>
+    </div>
+</div>
+
+</section>
+
+<section class="bill">
+    <h2>🧾 Bill Summary</h2>
+    <div id="bill">No items selected</div>
+    <button onclick="printBill()">Print Bill</button>
+</section>
+
+<footer>
+    <p>© 2026 Foodie's Restaurant</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

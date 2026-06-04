@@ -1,0 +1,83 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #ff4d4d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.customer {
+    text-align: center;
+    margin: 20px;
+}
+
+.customer input {
+    padding: 10px;
+    margin: 5px;
+}
+
+.category {
+    margin-left: 20px;
+    color: #ff4d4d;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.qty button {
+    padding: 5px 10px;
+}
+
+.bill {
+    text-align: center;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+@media print {
+    body * { visibility: hidden; }
+    #bill, #bill * { visibility: visible; }
+    #bill {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        font-family: monospace;
+        font-size: 18px;
+    }
+    button, header, footer, .menu, .customer, .category {
+        display: none;
+    }
+}
